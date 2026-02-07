@@ -8,7 +8,8 @@ export default function App(){
     return(
         <View style={styles.container}>
             <Text style={styles.mainTitle}>หน้าแรก</Text>
-            <Button title="ไปหน้า 2" onPress={() => router.navigate('/square')}/>
+            <Button title="คำนวณพื้นที่สี่เหลี่ยม ( หน้า 2 )" onPress={() => router.navigate('/square')}/>
+            <Button title="คำนวณเส้นรอบวงกลม ( หน้า 3 )" onPress={() => router.navigate('/circle')}/>
         </View>
     )
 }
@@ -18,7 +19,8 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor:"lightsalmon",
         justifyContent:"center",
-        alignItems:"center"
+        alignItems:"center",
+        gap: 20
     },
     mainTitle:{
         fontSize:20,
